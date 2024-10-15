@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #242423;
+}
+
+h1 {
+    color: white;
+}
+
+.logo, h1 { 
+    margin: 10px;
+}
+
+nav ul li {
+    display: inline-flex;
+    padding-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+}
+
+nav ul li a:hover {
+    color: #3777FF;
+}
+
+.content { grid-area: a; }
+.way { grid-area: b; }
+.task { grid-area: c; }
+.material { grid-area: d; }
+.content-material { grid-area: e; }
+
+.container {
+    margin: 20px;
+    display: grid;
+    grid-template-areas: "a b b e"
+                         "a c c e"
+                         "a d d e";
+}
+
+.content {
+    border-right: 1px solid black;
+    color: black;
+}
+
+.description, .topic {
+    padding-left: 16px;
+    color: grey;
+}
+
+summary {
+    font-size: 16px;
+}
+.description {
+    font-size: 14px;
+}
+
+.way, .task, .material {
+    padding-left: 20px;
+}
+
+.topic {
+    color: black;
+}
+
+.task {
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0;
+    width: 119px;
+    background-color: #57cc99;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+}
+
+h2, h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: #3777FF; 
+}
